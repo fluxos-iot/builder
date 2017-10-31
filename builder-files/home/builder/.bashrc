@@ -114,5 +114,5 @@ fi
 
 if shopt -q login_shell; then
   cd /opt/sources/openembedded-core
-  source /opt/sources/meta-flux/scripts/osng-init-build-env /opt/##BUILD_DIR##
+  source /opt/sources/meta-flux/scripts/flux-init-build-env /opt/##BUILD_DIR##
 fi
