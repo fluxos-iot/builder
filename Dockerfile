@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN ["apt-get", "update"]
 RUN ["apt-get", "upgrade", "-y", "--fix-missing"]
-RUN apt-get update && apt-get -y install locales build-essential python python3 git diffstat texinfo gawk chrpath wget cpio nano vim mc screen iptables lzop ca-certificates
+RUN apt-get update && apt-get -y install locales build-essential python python3 git diffstat texinfo gawk chrpath wget cpio screen iptables ca-certificates qemu
 
 RUN ["locale-gen", "en_US.UTF-8"]
 RUN ["dpkg-reconfigure", "locales"]
